@@ -2,22 +2,29 @@
 <html lang="en-us">
 	<head>
 		<meta charset="utf-8">
+<!-- insert author meta tag -->
 		<title>FOWD: Learning CSS</title>
 		<style>
-
+<!-- no table on this page, so take out table styling -->
    table, th, td{ border: 1px solid black;}
+<!-- you put the h2 styling in between two table style statemnts. you should keep style for objects together even if you don't combine them as one to make it easier to read them and see what is being done to one object -->			
 h2 {color: orange;}
 tfoot{background-color: white;}
 </style>
+<!-- insert header div -->
 <h1><b>Foundations of Web Design</b></h1>
 	<h2><b>Learning CSS</b></h2>
+<!-- close div -->
+<!-- add an id attribute with a value of nav to the ul tag -->
 <ul>
 	<li><a href="index.html">Home</a></li>
 	<li><a href="html.html">HTML</a></li>
 	<li>CSS</li>
 	<li>JavaScript</li>
 </ul>
+<!-- delete empty h3 -->		
 	<h3></h3>
+<!-- same problem as html.html. Look at my comments for a4 and apply them to this page. -->
 	</head>
 <body>
 	<p>Cascading Style Sheets, or CSS, is the recommended way to control the presentation layer in a web document. The main advantage of CSS over presentational HTML markup is that the styling can be kept entirely separate from the content. For example, it's possible to store all the presentational styles for a 10,000-page website in a single CSS file. CSS also provides far better control over presentation than do presentational element types in HTML.
@@ -25,8 +32,9 @@ tfoot{background-color: white;}
 <p>The rule set consists of a selector--the text before the left curly brace, {-- and a declaration block (delimited with the curly braces, { ... }).
 </p>
 <pre>selector { declaration block; }</pre>
+<!-- add alt text, width and height to img tag -->
 <img src="images/css-syntax.png">
-
+<!-- there is no table on this page. Delete the table. -->
 <table>
 
 <tbody>
@@ -46,6 +54,6 @@ tfoot{background-color: white;}
 </tr>
 </tfoot>
 </table>
-	
+<!-- insert /div -->
 </body>
 </html>
