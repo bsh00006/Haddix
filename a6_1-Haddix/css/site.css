@@ -1,3 +1,5 @@
+<!--The named color gray is not the same as #ccc https://www.color-hex.com/color/cccccc
+It's too dark and makes the page difficult to read. Replace gray with #ccc-->
 body {background-color: gray;
 font-family: Helvetica, Arial, sans-serif
 }
@@ -19,3 +21,8 @@ a {color: #008b14;}
 	
 	
 		a:focus {color: #00638b;}
+<!--Need to delete table styling from html.html page and insert it on site.css page.
+table, th, td{ border: 1px solid black;} tfoot{background-color: white;}
+Not sure why your nav element isn't showing up as light gray, but I've noticed that you sometimes
+leave out semicolons at the end of declarations. Try putting them in on lines 3, 8, & 9 and see if
+if the nav bar pops up.-->
