@@ -2,22 +2,22 @@
 	margin: 0;
 	box-sizing: border-box;
 	}
-body {background-color: gray;
-	font-family: Helvetica, Arial, sans-serif
+body {background-color: gray; <!--he specified #cccccc and by comparing your pages with his screenshots, it is obvious this is wrong. Change it.-->
+	font-family: Helvetica, Arial, sans-serif <!--missing semicolon-->
 	font-size: 1em;
 	background-image: url(../images/bg_body.png);
 	background-repeat: repeat-x;
 	background-position: left top;
 }
   table, th, td{ border: 1px solid black;}
-tfoot{background-color: white;}
+tfoot{background-color: white;} <!--take out the white-->
 
 h1,h2,h3,h4,h5,h6 {font-family: Georgia, serif;}
 p {line-height: 1.25;
 	margin-bottom: .625em}
 li {line-height: 1.25;}
 p>em {font-weight: bold}
-#nav {background-color: #ddddd
+#nav {background-color: #ddddd <!--not enough ds or too many ds Pick one or the other.-->
 	padding: 5px 10px;
 	margin-bottom: 10px}
 
@@ -41,9 +41,9 @@ a {color: #008b14;}
 #header {margin-top: 20px;
 	margin-bottom: 20px;}
 #header img {
-	border: 1px solid black;
-	background-color: white;
-	padding: 5 px;
+	border: 1px solid black; <!--It is supposed to be hexadecimal. Change it.-->
+	background-color: white; <!--It is supposed to be hexadecimal. Change it.-->
+	padding: 5 px; <!--Take out space and make it 5px.-->
 }
 blockquote {font-size: 2.5em;
 	width: 16.5em;
@@ -54,12 +54,12 @@ blockquote {font-size: 2.5em;
 	font-style: oblique;
 	background-image: url(../images/bigquote.png);
 	background-repeat: no-repeat;
-	background-position: left 8%
+	background-position: left 8% <!-- ; -->
 }
 blockquote footer {
 	display: block;
 	font-size: .4em;
-	color: #888
+	color: #888 <!-- ; -->
 	text-align: right;
 }
 	
