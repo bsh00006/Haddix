@@ -98,7 +98,7 @@ ul.nav {
 	margin-top: 20px;
 }
 ul.nav > li {
-	display: block;
+	display: inline-block;
 	padding: 5px 10px;
 	background-color: #ddd;
 	border-radius: 4px;
