@@ -18,8 +18,16 @@
 	</style>
 </head>
 <body>
-<div class="container">
-<h1>Contact</h1>
+<div id="container">
+<h1>Foundations of Web Design</h1>
+	<h2>Contact</h2>
+<dl id= "nav" role="navigation">
+	<dt>
+	<dd><a href="index.html">Home</a></dd>
+	<dd><a href="html.html">HTML</dd>
+	<dd><a href="css.html">CSS</a></dd>
+	<dd>JavaScript</dd> </dt>
+</dl>
 <p>Filling out this form will send the form data to Brian Haddix.</p>
 <form method="post" action="https://forms.un-static.com/forms/8c0f342e561a707a74e0f09ac5f9540f45787f74">
 	<fieldset>
@@ -29,7 +37,7 @@
 	- unordered list
 	- definition list
 	- using only form elements -->
-<ul>
+<dl>
 <!-- NAME
 I'm supplying the first lable and input to help you get started
 label and input for Name (Required)
@@ -51,29 +59,11 @@ label and input for Subject -->
 A textarea box the visitor can write what they need-->
 <li><label for="form-message">Message </label>
 	<textarea name="message" id="form-message" required/></textarea></li>
-</ul>
+</dl>
 		<span>
 		  <input type="submit" name="Submit" value="Submit" />
 		  
-		  <!-- The contact_process will check if these fields were
-		  completed in older browsers. 
-		  However, you can use the HTML5 required attribute
-		  for modern browsers -->
-		  <input type="hidden" name="required" value="name email" />
 		 
-		 
-		  <!-- this input sends the message from response.text as an email
-		  The document can be found in the autoresponse folder
-		  - Don't touch {~name~} ... it uses the name from the form
-		  - modify the message, if you wish
-		  - Change YOUR NAME HERE to your name -->
-		  <input type="hidden" name="autoresponse_file" value="response.txt" />
-		  
-		  
-		  <!--This input sends the user to the thankyou.html document
-		  don't change the value unless you change thankyou.html to
-		  a different name -->
-		  <input type="hidden" name="followup_url" value="thankyou.html" />
 		</span>
 
 	</fieldset>
