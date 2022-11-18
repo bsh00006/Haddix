@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Author" content="Brian Haddix"/>
+	<title>Contact : Brian Haddix</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/interior.css">
+<link rel="stylesheet" href="css/contact.css">
+	<style>
+		ul {
+			list-style-type: none; /* Remove bullets */
+  			padding: 0; /* Remove padding */
+  			margin: 0; /* Remove margins */
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+<h1>Foundations of Web Design</h1>
+	<h2>Contact</h2>
+<dl id= "nav" role="navigation">
+	<dt>
+	<dd><a href="index.html">Home</a></dd>
+	<dd><a href="html.html">HTML</dd>
+	<dd><a href="css.html">CSS</a></dd>
+	<dd>JavaScript</dd> </dt>
+</dl>
+<p>Filling out this form will send the form data to Brian Haddix.</p>
+<form method="post" action="https://forms.un-static.com/forms/8c0f342e561a707a74e0f09ac5f9540f45787f74">
+	<fieldset>
+	<legend>Contact Me</legend>
+
+<!-- structure the form the way you wish
+	- unordered list
+	- definition list
+	- using only form elements -->
+<dl>
+<!-- NAME
+I'm supplying the first lable and input to help you get started
+label and input for Name (Required)
+-->
+<li><label for="form-name">Full Name </label>
+	<input type="text" name="name" id="form-name" required/></li>
+
+<!--EMAIL
+label and input for Email (Required) -->
+<li><label for="form-email">Email </label>
+	<input type="email" name="email" id="form-email" required/></li>
+		
+<!-- Subject
+label and input for Subject -->
+<li><label for="form-subject">Subject </label>
+	<input type="text" name="subject" id="form-subject" required/></li>
+
+<!-- Message
+A textarea box the visitor can write what they need-->
+<li><label for="form-message">Message </label>
+	<textarea name="message" id="form-message" required/></textarea></li>
+</dl>
+		<span>
+		  <input type="submit" name="Submit" value="Submit" />
+		  
+		 
+		</span>
+
+	</fieldset>
+
+</form>
+</div>
+</body>
+</html>

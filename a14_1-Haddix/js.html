@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+<meta name="author" content="Brian Haddix">
+		<title>FOWD: Learning CSS</title>
+		<link rel="stylesheet" href="css/site.css">
+		<link rel="stylesheet" href="css/interior.css">
+		<link rel="stylesheet" href="css/gallery.css">
+	<script src="js/gallery.js"></script>
+
+	</head>
+<body id="fluid">
+<div id="container">
+<div id="header" role="banner">
+<h1>Foundations of Web Design</h1>
+	<h2>Learning CSS</h2>
+</div>
+</div>
+<ul id="nav" role="navigation">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="html.html">HTML</a></li>
+	<li class="current"><a href="css.html">CSS</a></li>
+	<li>JavaScript</li>
+</ul>
+	
+<h3>Creating a Photo Gallery</h3>
+<div class="full-img" id="fullImgBox">
+		<img src="photos/b&w-landscape-lg.jpg" id="fullImg">
+		<span onclick="closeFullImg()">X</span>
+	</div>
+	<div class="img-gallery">
+		<img src="photos/b&w-landscape-lg.jpg" onclick="openFullImg(this.src)">
+		<img src="photos/field-yellow-lg.jpg" onclick="openFullImg(this.src)">
+		<img src="photos/fisherman-lg.jpg" onclick="openFullImg(this.src)">
+		<img src="photos/tree-lg.jpg" onclick="openFullImg(this.src)">
+		<img src="photos/woman-in-field-lg.jpg" onclick="openFullImg(this.src)">
+
+	</div>
+	
+<footer role="contentinfo">
+&copy; 2022 | Brian Haddix | <a href="contact.html">Contact Me</a>
+</footer>
+</html>
