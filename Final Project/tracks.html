@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html>
+	<head>
+<meta charset="utf-8">
+<meta name="author">
+<meta content="Brian Haddix">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Circuit Tracks</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/gallery.js"></script>
+
+<style>
+			
+			.img-gallery{
+				width: 80%;
+				margin: 100px auto 50px;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				grid-gap: 30px;
+			}
+			.img-gallery img{
+				width: 100%;
+				cursor: pointer;
+			}
+			.img-gallery img:hover{	
+				transform: scale(0.8) rotate(-15deg);
+				border-radius: 20px;
+				box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+			}
+			.full-img{
+				width: 100%;
+				height: 100vh;
+				background: rgba(0,0,0,0.9);
+				position: fixed;
+				top: 0;
+				left:0;
+				display: none;
+				align-items: center;
+				justify-content: center;
+				z-index: 100;
+			}
+			.full-img img{
+				width: 90%;
+				max-width: 500px;
+			}
+			.full-img span{
+				position: absolute;
+				top: 5%;
+				right: 5%;
+				font-size: 30px;
+				color:#fff;
+				cursor: pointer;
+			}
+					
+		</style>
+	</head>
+
+	<body>
+<table>
+	<tr>
+<td><a href="index.html">HOME</a></td>
+<td><a href="Characters.html">DRIVERS</a></td>
+<td><a href="weapons.html">WEAPONS</a></td>
+<td>TRACKS</td>
+<td><a href="ME.html">AUTHOR</a></td>
+	</tr>
+</table>
+	<div>
+<h1>The Race Tracks</h1>
+
+
+<div="main">
+	<h3>Tracks in Neon Circuit will be as colorful as the characters are. No basic ovals or circles here, every track is unique with it's twists, turns, dips, hazards, and shortcuts. Locations vary from cities, stadiums, pyramids, an arcade game and maybe even the depths of hell.
+</h3>
+
+<p><b>Miami</b> - Because what's an 80's show without Miami? Maxx Akshaun's home streets he knows like the back of his hand. We even have permission to tear through Miami's latest edition, the Under Ocean suburbs.
+</p>
+
+<p><b>Neo Newest York</b> - New York has seen some upgrades from what you remember from 85. Now the pioneer of NEON implementation the entire city has morphed around it with it's dark buildings and glowing roads. And of course we here at Neon Circuit didn't forget the stop every new visitor to Neo Newest York must see, Liberty Island and its 3 Statues of Liberty (since it was deemed necessary to have backups ever since a rogue group of ghost hunters hijacked and took the first one for a joyride.
+</p>
+
+<p><b>Old Detroit</b> - Many see the rampant crime rate as a reason to leave Old Detroit, we see it as a "delightful little test of driving skill". Besides, we've got a feeling that the Cop Corp's mechanical patrol officers are doing a good job of keeping the streets clear.
+</p>
+
+<p><b>Indyana 500</b> - Some say that this pyramid booby trap infested pyramid system is cursed and will kill anyone who dares approach it or the treasures that lie within. Sounds like the perfect amount of drama necessary to house a Neon Circuit race. Drivers must navigate the obstacles and traps meant to deter explorers whilst they race to find the fabled "Onyx Parallelepiped", a rumored box with each face encrusted with a different jewel making a beautiful piece of jewelry.
+</p>
+
+<p><b>Jurassic Jousters</b> - A television program featuring proud contestants in a competition of grit, reflexes, and skill not only against their fellow competitors but also against our crew of genetically modified dinosaur Jousters. The Jousters have been clamoring for a real challenge instead of the usual construction workers and gym teachers that they often face, so now their next challengers will be the racers of the Neon Circuit. Watch as our combatants have to avoid the pummeling the Jousters have in mind for them, such as flaming tennis ball canons, raptor-sized hamster balls, and the dreaded giant double headed cotton swabs.
+</p>
+
+<p><b>Mt. Metalonix</b> - where our lovable Knight Rydar likes to put up his feet and relax after a hard day of shredding knarly riffs, and also where he records said riffs right inside an active volcano! We're not one to question his taste in Medieval architecture nor his preferences of draconic pets, but we certainly are glad that he let us race through it as part of the season. He assures us that the volcano shouldn't erupt too hard and that his legion of dragon/helicopter hybrids aren't biased in terms of who they target.
+</p>
+
+<p><b>Lord Bonedominous's Lair of Darkness of Eternal Pain and Chaos</b> - A realm so deep and mysterious that officials of Neon Circuit had to be blindfolded and lead into an alley between an apartment complex and an abandoned burger place in the dingy sector of Miami while he cast a spell on us, but lo and behold, we saw a dank, dirty realm rife with vicious giant rats, cockroaches, and an odd giant cheesy, crispy food that grew all over it's soft, bouncy plains. We were led to such wonderful locales such as the "Lava Fields of Despair" that somehow smelled like burned macaroni and the "Whirlpool of the Void" that made such a devastatingly loud flushing noise. While we certainly were impressed we found it odd that we had to make our drivers to sign a form making sure they don't suffer from "shrink ray allergies".
+</p>
+
+</div>
+
+	<div class="full-img" id="fullImgBox">
+		<img src="images/indyana1.jpg" id="fullImg">
+		<span onclick="closeFullImg()">X</span>
+	</div>
+	<div class="img-gallery">
+		<img src="images/indyana1.jpg" onclick="openFullImg(this.src)">
+		<img src="images/indyana2.jpg" onclick="openFullImg(this.src)">
+		<img src="images/jurassic1.jpg" onclick="openFullImg(this.src)">
+		<img src="images/jurassic2.jpg" onclick="openFullImg(this.src)">
+		<img src="images/metalonix1.jpg" onclick="openFullImg(this.src)">
+		<img src="images/metalonix2.jpg" onclick="openFullImg(this.src)">
+		<img src="images/metalonix3.jpg" onclick="openFullImg(this.src)">
+		<img src="images/old-detroit1.jpg" onclick="openFullImg(this.src)">
+		<img src="images/apartment.png" onclick="openFullImg(this.src)">
+	</div>
+		
+<script>
+		var fullImgBox = document.getElementById("fullImgBox");
+		var fullImg = document.getElementById("fullImg");
+		
+		function openFullImg(pic){
+			fullImgBox.style.display = "flex";
+			fullImg.src = pic;
+		}
+		function closeFullImg(){
+			fullImgBox.style.display = "None";
+		}	
+	</script>
+
+<footer>...and many more
+</footer>
+	</body>
+
+</html>

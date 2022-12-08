@@ -1,0 +1,34 @@
+
+body { background-color: #4c2d63;
+color: #57ebe6;
+}
+
+
+
+table, th, td{ border: 1px solid #333;
+	border-color: pink;
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;} 
+h1 {text-align: center;
+	font-size: 5em;
+	font-weight: bold;
+	font-family:Rockwell;
+}
+h2 {text-align: center;
+font-size: 2.5em;
+font-family:"Trebuchet MS"}
+
+h3 {font-size: 1.4em;
+	}
+
+p {font-size: 1.2em;}
+
+footer {text-align: right;
+	font-style: italic;}
+.note {font-style: italic;
+	font-size: 0.9em;}
+img { display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
